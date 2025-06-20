@@ -29,7 +29,6 @@ public class CrptApi {
 
         ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
         service.schedule(this::reset, timeIntervalMillis, timeUnit);
-        service.shutdown();
     }
 
     private void reset() {
